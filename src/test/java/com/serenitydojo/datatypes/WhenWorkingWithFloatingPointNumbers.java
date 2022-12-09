@@ -14,9 +14,11 @@ public class WhenWorkingWithFloatingPointNumbers {
     @Test
     public void convertToFarenheit() {
         double celcius = 27.0d;
-        double farenheit = 0.0d;
 
         // TODO: Use a floating point calculation to calculate the farenheit equivalent of the celcius value.
+        double nine = 9.0;
+        double five = 5.0;
+        double farenheit = nine/five * celcius + 32;
 
         assertThat(farenheit, equalTo(80.6));
     }
@@ -27,12 +29,13 @@ public class WhenWorkingWithFloatingPointNumbers {
     //
     @Test
     public void convertMetersToFeet() {
+        final double poundsInKilograms = 2.20462;
         int weightInKilograms = 50;
         double weightInPounds = 0;
 
         // TODO: Use a floating point calculation to calculate the correct weight in pounds
+        weightInPounds = weightInKilograms * poundsInKilograms;
 
         assertThat(weightInPounds, equalTo(110.231));
-
     }
 }
